@@ -6,7 +6,7 @@ public class Parcial {
 		
 		String respuesta = "";
 
-		// Excepcion no deividir por 0
+		// excepcion no deividir por 0
 		if (a == 0) {
 		    throw new IllegalArgumentException("a no puede ser 0");
 		}
@@ -16,7 +16,7 @@ public class Parcial {
 
 	
 		if (disc < 0) {
-		    throw new IllegalArgumentException("Las raíces son imaginarias porque el discriminante es negativo.");
+		    throw new IllegalArgumentException("Las raices son imaginarias porque el discriminante es negativo.");
 		}
 
 		// calculo soluciones
