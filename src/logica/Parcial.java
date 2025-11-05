@@ -2,7 +2,7 @@ package logica;
 
 public class Parcial {
 	
-	public String resolverEcuacionSegundoOrden(int a, int b, int c) {
+	public String resolverEcuacionSegundoOrden(double a, double b, double c) {
 		
 		String respuesta = "";
 
@@ -13,15 +13,16 @@ public class Parcial {
 
 		// discriminante que puede ser negativo
 		Double disc = Math.pow(b, 2) - 4 * a * c;
-
-	
+		System.out.println("El discriminante es: " + disc)
+;
+	 
 		if (disc < 0) {
 		    throw new IllegalArgumentException("Las raices son imaginarias porque el discriminante es negativo.");
 		}
 
 		// calculo soluciones
-		Double solucion1 = (-b + Math.sqrt(disc)) / (2 * a);
-		Double solucion2 = (-b - Math.sqrt(disc)) / (2 * a);
+		Double solucion1 = (-b+Math.sqrt(disc)) / (2*a);
+		Double solucion2 = (-b-Math.sqrt(disc)) / (2*a);
 
 		
 		if (Double.compare(solucion1, solucion2) == 0) {
